@@ -1,0 +1,66 @@
+/* Reset beberapa gaya bawaan */
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya jumbotron */
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(72.74deg, rgba(0, 52, 35, 0.55) 56.19%, rgba(0, 0, 0, 0) 94.42%), url(img/WhatsApp\ Image\ 2023-09-07\ at\ 10.34.08.jpg);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    text-align: start;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+}
+
+.jumbotron p {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+}
+.col1 {
+    font-size: 50px;
+    
+}
+/* Gaya search container */
+.search-container {
+    background-color: rgba(255, 255, 255, 0.30); /* Opacity disetel ke 0.8 untuk tingkat transparansi yang rendah */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 500px; /* Sesuaikan lebar sesuai kebutuhan Anda */
+    margin: 20px auto;
+}
+
+/* Gaya search bar */
+.search-bar {
+    
+    border: none;
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    border-radius: 10px;
+}
+
+/* Gaya search button */
+.search-button {
+    background-color: #00a329;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15%;
+}
+
+.search-button:hover {
+    background-color: #44e75f;
+}
+
