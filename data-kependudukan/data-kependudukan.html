@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="data-kependudukan.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,900;1,100;1,500;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-contextmenu"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid ms-lg-5 me-lg-5">
+        <a
+          class="navbar-brand"
+          style="
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          "
+          href="/WebTest/index.html"
+          >Tambaksari Kidul</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-lg-auto">
+            <a class="nav-link" href="/WebTest/profil/visimisi.html">Profil</a>
+            <a
+              class="nav-link"
+              href="/WebTest/pemerintah-desa/pemerintah-desa.html"
+              >Pemerintah Desa</a
+            >
+
+            <a
+              class="nav-link active"
+              href="/WebTest/data-kependudukan/data-kependudukan.html"
+              >Data Kependudukan</a
+            >
+
+            <a class="nav-link" href="/WebTest/ppid/profileppid.html">PPID</a>
+
+            <a class="nav-link" href="/WebTest/produk-hukum/perdes.html"
+              >Produk Hukum</a
+            >
+
+            <a
+              class="nav-link"
+              href="/WebTest/desa-anti-korupsi/indikator1.html"
+              >Desa Anti korupsi</a
+            >
+
+            <form class="d-flex">
+              <input
+                class="form-control me-2 ms-1"
+                type="search"
+                placeholder="Masukkan NIK/KK"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-150">
+      <div class="row">
+        <div class="col-5">
+          <h1 class="profil" data-aos="fade-left" data-aos-duration="1600">
+            DATA KEPENDUDUKAN
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 mr-4" data-aos="fade-right" data-aos-duration="1600">
+          <canvas id="grafikBatang">
+            <script>
+              var ctx = document
+                .getElementById("grafikBatang")
+                .getContext("2d");
+              var grafikBatang = new Chart(ctx, {
+                type: "bar",
+                data: {
+                  labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+                  datasets: [
+                    {
+                      label:
+                        "GRAFIK DATA DEMOGRAFI BERDASAR PENDIDIKAN DALAM KK",
+                      data: [594, 250, 594, 500, 1250, 32, 149, 337, 15, 0],
+                      backgroundColor: "rgba(9,73,238)", // Warna area batang
+                      borderColor: "rgba(0,57,94)", // Warna batas batang
+                      borderWidth: 1,
+                      font: {
+                        size: 12,
+                        color: "rgb(0,57,94)",
+                      },
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: {
+                        font: {
+                          size: 12,
+                          weight: "bold",
+                        },
+                        color: "rgba(0,57,94)",
+                      },
+                    },
+                  },
+                },
+              });
+            </script>
+          </canvas>
+        </div>
+        <div class="col-6">
+          <p
+            class="deks-grafik"
+            style="padding-right: 4.5%;"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            GRAFIK DATA DEMOGRAFI BERDASAR PENDIDIKAN DALAM KK
+          </p>
+          <p class="tanggal" data-aos="fade-left" data-aos-duration="1600">
+            Senin, 9 Oktober 2023 Pukul 11.20 WIB
+          </p>
+          <a
+            href="detail-kependudukan.html"
+            class="detail"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6 mr-4" data-aos="fade-right" data-aos-duration="1600">
+          <canvas id="grafikBatang2">
+            <script>
+              var ctx = document
+                .getElementById("grafikBatang2")
+                .getContext("2d");
+              var grafikBatang2 = new Chart(ctx, {
+                type: "bar",
+                data: {
+                  labels: ["1", "2"],
+                  datasets: [
+                    {
+                      label: "GRAFIK DATA DEMOGRAFI BERDASAR JENIS KELAMIN",
+                      data: [1805, 1861],
+                      backgroundColor: "rgba(9,73,238)", // Warna area batang
+                      borderColor: "rgba(0,57,94)", // Warna batas batang
+                      borderWidth: 1,
+                      barPercentage: 0.2, // mengatur ukuran batang(80% dari lebar penuh)
+                      font: {
+                        size: 12,
+                        color: "rgb(0,57,94)",
+                      },
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: {
+                        font: {
+                          size: 12,
+                          weight: "bold",
+                        },
+                        color: "rgba(0,57,94)",
+                      },
+                    },
+                  },
+                },
+              });
+            </script>
+          </canvas>
+        </div>
+        <div class="col-6">
+          <p
+            class="deks-grafik"
+            style="padding-right: 16.5%;"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            GRAFIK DATA DEMOGRAFI BERDASAR JENIS KELAMIN
+          </p>
+          <p class="tanggal" data-aos="fade-left" data-aos-duration="1600">
+            Senin, 9 Oktober 2023 Pukul 11.20 WIB
+          </p>
+          <a
+            href="detail-kependudukan2.html"
+            class="detail"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6" data-aos="fade-right" data-aos-duration="1600">
+          <canvas id="grafikBatang3">
+            <script>
+              var ctx = document
+                .getElementById("grafikBatang3")
+                .getContext("2d");
+              var grafikBatang3 = new Chart(ctx, {
+                type: "bar",
+                data: {
+                  labels: ["1", "2", "3", "4", "5", "6", "7"],
+                  datasets: [
+                    {
+                      label: "GRAFIK DATA DEMOGRAFI BERDASAR AGAMA",
+                      data: [3272, 213, 174, 2, 5, 0, 0],
+                      backgroundColor: "rgba(9,73,238)", // Warna area batang
+                      borderColor: "rgba(0,57,94)", // Warna batas batang
+                      borderWidth: 1,
+                      barPercentage: 0.6, // mengatur ukuran batang(80% dari lebar penuh)
+                      font: {
+                        size: 12,
+                        color: "rgb(0,57,94)",
+                      },
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: {
+                        font: {
+                          size: 12,
+                          weight: "bold",
+                        },
+                        color: "rgba(0,57,94)",
+                      },
+                    },
+                  },
+                },
+              });
+            </script>
+          </canvas>
+        </div>
+        <div class="col-6">
+          <p
+            class="deks-grafik"
+            style="padding-right: 27.5%;"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            GRAFIK DATA DEMOGRAFI BERDASAR AGAMA
+          </p>
+          <p class="tanggal" data-aos="fade-left" data-aos-duration="1600">
+            Senin, 9 Oktober 2023 Pukul 11.20 WIB
+          </p>
+          <a
+            href="detail-kependudukan3.html"
+            class="detail"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6" data-aos="fade-right" data-aos-duration="1600">
+          <canvas id="grafikBatang4">
+            <script>
+              var ctx = document
+                .getElementById("grafikBatang4")
+                .getContext("2d");
+              var grafikBatang4 = new Chart(ctx, {
+                type: "bar",
+                data: {
+                  labels: ["1", "2", "3", "4"],
+                  datasets: [
+                    {
+                      label: "GRAFIK DATA DEMOGRAFI BERDASAR STATUS PERKAWINAN",
+                      data: [1508, 1756, 105, 297],
+                      backgroundColor: "rgba(9,73,238)", // Warna area batang
+                      borderColor: "rgba(0,57,94)", // Warna batas batang
+                      borderWidth: 1,
+                      barPercentage: 0.4, // mengatur ukuran batang(80% dari lebar penuh)
+                      font: {
+                        size: 12,
+                        color: "rgb(0,57,94)",
+                      },
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: {
+                        font: {
+                          size: 12,
+                          weight: "bold",
+                        },
+                        color: "rgba(0,57,94)",
+                      },
+                    },
+                  },
+                },
+              });
+            </script>
+          </canvas>
+        </div>
+        <div class="col-6">
+          <p
+            class="deks-grafik"
+            style="padding-right: 6.5%;"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            GRAFIK DATA DEMOGRAFI BERDASAR STATUS PERKAWINAN
+          </p>
+          <p class="tanggal" data-aos="fade-left" data-aos-duration="1600">
+            Senin, 9 Oktober 2023 Pukul 11.20 WIB
+          </p>
+          <a
+            href="detail-kependudukan4.html"
+            class="detail"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-6" data-aos="fade-right" data-aos-duration="1600">
+          <canvas id="grafikBatang5">
+            <script>
+              var ctx = document
+                .getElementById("grafikBatang5")
+                .getContext("2d");
+              var grafikBatang5 = new Chart(ctx, {
+                type: "bar",
+                data: {
+                  labels: [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10",
+                    "11",
+                    "12",
+                    "13",
+                    "14",
+                    "15",
+                    "16",
+                    "17",
+                  ],
+                  datasets: [
+                    {
+                      label: "GRAFIK DATA DEMOGRAFI BERDASAR STATISTIK USIA",
+                      data: [
+                        0,
+                        114,
+                        209,
+                        251,
+                        246,
+                        251,
+                        226,
+                        208,
+                        264,
+                        269,
+                        236,
+                        241,
+                        256,
+                        248,
+                        202,
+                        174,
+                        271,
+                      ],
+                      backgroundColor: "rgba(9,73,238)", // Warna area batang
+                      borderColor: "rgba(0,57,94)", // Warna batas batang
+                      borderWidth: 1,
+                      barPercentage: 0.9, // mengatur ukuran batang(80% dari lebar penuh)
+                      font: {
+                        size: 12,
+                        color: "rgb(0,57,94)",
+                      },
+                    },
+                  ],
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      ticks: {
+                        font: {
+                          size: 12,
+                          weight: "bold",
+                        },
+                        color: "rgba(0,57,94)",
+                      },
+                    },
+                  },
+                },
+              });
+            </script>
+          </canvas>
+        </div>
+        <div class="col-5 mr-5">
+          <p class="deks-grafik" data-aos="fade-left" data-aos-duration="1600">
+            GRAFIK DATA DEMOGRAFI BERDASAR STATISTIK USIA
+          </p>
+          <p class="tanggal" data-aos="fade-left" data-aos-duration="1600">
+            Senin, 9 Oktober 2023 Pukul 11.20 WIB
+          </p>
+          <a
+            href="detail-kependudukan5.html"
+            class="detail"
+            data-aos="fade-left"
+            data-aos-duration="1600"
+          >
+            Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="background-footer">
+      <div class="container-fluid">
+        <div class="footer">
+          <div class="tambaksari">
+            <h2 style="font-size: 18px;">TAMBAKSARI KIDUL</h2>
+            <p>
+              Tambaksari Kidul merupakan sebuah desa di kecamatan Kembaran,
+              Banyumas, Jawa Tengah, Indonesia. Desa ini memiliki luas 149km2
+              dan memiliki kepadatan sebesar 37 jiwa/km2. Dengan masyarakatnya
+              yang sebagian besar sebagai petani dan pedagang.
+            </p>
+          </div>
+          <div class="tengah">
+            <div class="alamat">
+              <h2 style="font-size: 18px;">Alamat</h2>
+              <p>
+                Dusun I Jalan Sunan Bonang No.36, RT.05/RW.03, Dusun I,
+                Tambaksari Kidul, Kec. Kembaran, Kabupaten Banyumas, Jawa Tengah
+                53146
+              </p>
+            </div>
+            <div class="profil-desa">
+              <h2 style="font-size: 18px;">Profil Desa</h2>
+              <a href="#">Visi Misi</a>
+              <a href="#">Wilayah</a>
+              <a href="#">Demografi</a>
+              <a href="#">Tugas dan Fungsi</a>
+              <a href="#">Struktur Organisasi</a>
+            </div>
+          </div>
+          <div class="side">
+            <div class="email">
+              <h2 style="font-size: 18px;">Email</h2>
+              <p>tambaksarikidul@gmail.com</p>
+            </div>
+            <div class="social-media">
+              <h2 style="font-size: 18px;">Social Media</h2>
+              <img src="/WebTest/img/fb.png" alt="image" />
+              <img src="/WebTest/img/xtwiter 5.png" alt="image" />
+              <img src="/WebTest/img/ig.png" alt="image" />
+              <img src="/WebTest/img/yt 5.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2023 Hak Cipta Dilindungi. Develop oleh STMIK Team</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

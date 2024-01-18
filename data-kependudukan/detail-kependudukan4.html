@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o"
+      crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800;6..12,900&family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,900;1,100;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/WebTest/footer.css">
+  </head>
+  <style>
+    .mt-150 {
+      margin-top: 150px;
+    }
+    .body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-top: -50px;
+    }
+    .visi{
+      color: rgb(0, 0, 0);
+    }
+    .visi-desa{
+      display: flexbox;
+    }
+    .margin{
+      margin-left: 15px;
+    }
+    .nav-tbs{
+      color: #030303;
+      font-family: Calistoga;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .bg{
+      width: 1150px;
+      height: 580px;
+      flex-shrink: 0;
+    }
+    .navbar-brand{
+      color: #030303;
+      font-family: Calistoga;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .profil{
+        color: #00395E;
+        text-align: center;
+        font-family: Calistoga;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .bawah-bg{
+      color: #020202;
+      font-family: Philosopher;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 1210px;
+    }
+    .visi{
+      color: #FFF;
+      font-family: Calistoga;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 400px;
+        height: 59px;
+        flex-shrink: 0;
+        background: #000;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 10px;
+    }
+    .flex{
+      display: flex;
+      
+    }
+    .wilayah{
+      color: #000;
+      font-family: Calistoga;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-left: 2px;
+      padding-top: 10px;
+    }
+    .garis{
+      background: rgba(0, 0, 0, 0.5);
+      width: 580px;
+        height: 1px;
+    }
+    .visi-bawah{
+      color: #0B0A0A;
+      font-family: Inter;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .desk-visi{
+      color: #0B0A0A;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .bg-item{
+      background-color: black;
+        width: 1450px;
+        height: 372px;
+        flex-shrink: 0;
+        display: flex;
+    }
+    .tbs{
+      color: #FFF;
+      font-family: Philosopher;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 174px;
+      
+    }
+    .tbs-deks{
+      width: 446px;
+      height: 113px;
+      flex-shrink: 0;
+      color: #FFFAFA;
+      font-family: Philosopher;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .pemerintah{
+        color: #000;
+        font-family: Philosopher;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .ahmad{
+        width: 100%;
+        height: 230px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        
+    }
+    .nama{
+        color: #000;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .grafik{
+        width: 500px;
+        height: 283px;
+    }
+    .deks-grafik{
+        color: #00395E;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: left;
+        
+        
+    }
+    .container-mt-5{
+        display: flex;
+    }
+    .tanggal{
+        color: #00395E;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 4px;
+       
+    }
+    .detail{
+      color: #00395E;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      width: 173px;
+      height: 22px;
+      margin-top: 180px;
+    }
+    .grafik-2{
+      width: 448px;
+      height: 272px;
+    }
+    .breadcrumb{
+        color: #FFF;
+        text-align: center;
+        font-family: Calistoga;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .judul-tabel{
+        color: #000;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    .tbl{
+        text-align: center;
+    }
+    .isi-tabel{
+       
+        text-align: center;
+    }
+    .angka{
+      text-align: center;
+    }
+
+    .kembali{
+      width: 118px;
+      height: 26px;
+      color: #000000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration: none;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg" role="navigation">
+      <div class="container">
+          <a class="navbar-brand" href="/WebTest/index.html">Tambaksari Kidul</a>
+      </div>   
+          
+    </nav>
+  
+    <div class="container mt-5">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href=""></a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <a
+              href="/WebTest/data-kependudukan/data-kependudukan.html"
+              class="kembali"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              >Kembali</a
+            >
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="deks-grafik" data-aos="fade-left" data-aos-duration="1500">GRAFIK DATA DEMOGRAFI BERDASAR STATUS PERKAWINAN</h1>
+            <canvas id="grafikBatang4" data-aos="fade- fade-down-right" data-aos-duration="1500">
+              <script>
+                var ctx = document.getElementById('grafikBatang4').getContext('2d');
+                var grafikBatang4 = new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+                    labels: ['1', '2','3','4'],
+                    datasets: [{
+                      label: 'GRAFIK DATA DEMOGRAFI BERDASAR STATUS PERKAWINAN',
+                      data: [1508,1756,105,297],
+                      backgroundColor: 'rgba(9,73,238)', // Warna area batang
+                      borderColor: 'rgba(0,57,94)', // Warna batas batang
+                      borderWidth: 1,
+                      barPercentage:0.4, // mengatur ukuran batang(80% dari lebar penuh)
+                      font : {
+                        size: 12,
+                        color : 'rgb(0,57,94)'
+                      }
+                      
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true,
+                        ticks: {
+                          font: {
+                            size : 12,
+                            weight: 'bold'
+                            
+                          },
+                          color : 'rgba(0,57,94)'
+                        }
+                      }
+                       
+                    },
+                  }
+                });
+              </script>
+              
+            </canvas>
+                
+            </div>
+           
+        </div>
+        <h2 class="judul-tabel mt-5" data-aos="fade-left" data-aos-duration="1500">TABEL DATA DEMOGRAFI BERDASARKAN STATUS PERKAWINAN</h2>
+    </div>
+    <div class="container mt-3" data-aos="fade-down-left" data-aos-duration="1500">
+        <table class="table table-bordered">
+            <thead class="tbl">
+                <tr>
+                <th class="tbl" rowspan="2" data-aos="fade-down-right" data-aos-duration="1500">No</th>
+                <th class="tbl" rowspan="2" data-aos="fade-down-right" data-aos-duration="1500">Kelompok</th>
+                <th class="tbl" colspan="2" data-aos="fade-down-right" data-aos-duration="1500">Jumlah</th>
+                <th class="tbl" colspan="2" data-aos="fade-down-right" data-aos-duration="1500">Laki-laki</th>
+                <th class="tbl" colspan="2" data-aos="fade-down-right" data-aos-duration="1500">Perempuan</th>
+                </tr>
+                <tr>
+                    
+                    <th class="tbl" data-aos="fade-down-left" data-aos-duration="1500">Jumlah</th>
+                    <th class="tbl" data-aos="fade-down-left" data-aos-duration="1500">Presentase</th>
+                    <th class="tbl" data-aos="fade-down-left" data-aos-duration="1500">Jumlah</th>
+                    <th class="tbl" data-aos="fade-down-left" data-aos-duration="1500">Presentase</th>
+                    <th class="tbl" data-aos="fade-down-left" data-aos-duration="1500">Jumlah</th>
+                    <th class="tbl" data-aos="fade-down-left" data-aos-duration="1500">Presentase</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th class="angka" scope="row">1</th>
+                <td class="kelompok">Tidak/Belum sekolah</td>
+                <td class="isi-tabel">594</td>
+                <td class="isi-tabel">16.20%</td>
+                <td class="isi-tabel">319</td>
+                <td class="isi-tabel">8.70%</td>
+                <td class="isi-tabel">275</td>
+                <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                <th class="angka" scope="row">2</th>
+                <td class="kelompok">Tidak/Belum sekolah</td>
+                <td class="isi-tabel">594</td>
+                <td class="isi-tabel">16.20%</td>
+                <td class="isi-tabel">319</td>
+                <td class="isi-tabel">8.70%</td>
+                <td class="isi-tabel">275</td>
+                <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                <th class="angka" scope="row">3</th>
+                <td class="kelompok">Tidak/Belum sekolah</td>
+                <td class="isi-tabel">594</td>
+                <td class="isi-tabel">16.20%</td>
+                <td class="isi-tabel">319</td>
+                <td class="isi-tabel">8.70%</td>
+                <td class="isi-tabel">275</td>
+                <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th class="angka" scope="row">4</th>
+                    <td class="kelompok">Tidak/Belum sekolah</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th class="angka" scope="row">5</th>
+                    <td class="kelompok">Tidak/Belum sekolah</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th class="angka" scope="row">6</th>
+                    <td class="kelompok">Tidak/Belum sekolah</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th class="angka" scope="row">7</th>
+                    <td class="kelompok">Tidak/Belum sekolah</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th class="angka" scope="row">8</th>
+                    <td class="kelompok">Tidak/Belum sekolah</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th class="angka" scope="row">9</th>
+                    <td class="kelompok">Tidak/Belum sekolah</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th class="angka" scope="row">10</th>
+                    <td class="kelompok">Tidak/Belum sekolah</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td class="kelompok">Belum Mengisi</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td class="kelompok">Total</td>
+                    <td class="isi-tabel">594</td>
+                    <td class="isi-tabel">16.20%</td>
+                    <td class="isi-tabel">319</td>
+                    <td class="isi-tabel">8.70%</td>
+                    <td class="isi-tabel">275</td>
+                    <td class="isi-tabel">7.50%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+   
+    
+    
+
+
+
+
+    <div class="background-footer">
+      <div class="container">
+        <div class="footer">
+          <div class="tambaksari">
+            <h2 style="font-size: 18px;">TAMBAKSARI KIDUL</h2>
+            <p>
+              Tambaksari Kidul merupakan sebuah desa di kecamatan Kembaran,
+              Banyumas, Jawa Tengah, Indonesia. Desa ini memiliki luas 149km2
+              dan memiliki kepadatan sebesar 37 jiwa/km2. Dengan masyarakatnya
+              yang sebagian besar sebagai petani dan pedagang.
+            </p>
+          </div>
+          <div class="tengah">
+            <div class="alamat">
+              <h2 style="font-size: 18px;">Alamat</h2>
+              <p>
+                Dusun I Jalan Sunan Bonang No.36, RT.05/RW.03, Dusun I,
+                Tambaksari Kidul, Kec. Kembaran, Kabupaten Banyumas, Jawa Tengah
+                53146
+              </p>
+            </div>
+            <div class="profil-desa">
+              <h2 style="font-size: 18px;">Profil Desa</h2>
+              <a href="#">Visi Misi</a>
+              <a href="#">Wilayah</a>
+              <a href="#">Demografi</a>
+              <a href="#">Tugas dan Fungsi</a>
+              <a href="#">Struktur Organisasi</a>
+            </div>
+          </div>
+          <div class="side">
+            <div class="email">
+              <h2 style="font-size: 18px;">Email</h2>
+              <p>tambaksarikidul@gmail.com</p>
+            </div>
+            <div class="social-media">
+              <h2 style="font-size: 18px;">Social Media</h2>
+              <img src="/WebTest/img/fb.png" alt="image" />
+              <img src="/WebTest/img/xtwiter 5.png" alt="image" />
+              <img src="/WebTest/img/ig.png" alt="image" />
+              <img src="/WebTest/img/yt 5.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2023 Hak Cipta Dilindungi. Develop oleh STMIK Team</footer>
+    
+    
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/chart.js"
+
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Data1', 'Data2', 'Data3'],
+          datasets: [{
+            label: 'Contoh Grafik Batang',
+            data: [12, 19, 3],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+           
+            
+      
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

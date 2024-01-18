@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="perdes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid ms-lg-5 me-lg-5">
+        <a class="navbar-brand" href="/WebTest/index.html">Tambaksari Kidul</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-lg-auto">
+            <a class="nav-link" href="/WebTest/profil/visimisi.html">Profil</a>
+            <a
+              class="nav-link"
+              href="/WebTest/pemerintah-desa/pemerintah-desa.html"
+              >Pemerintah Desa</a
+            >
+
+            <a
+              class="nav-link"
+              href="/WebTest/data-kependudukan/data-kependudukan.html"
+              >Data Kependudukan</a
+            >
+
+            <a class="nav-link" href="/WebTest/ppid/profileppid.html">PPID</a>
+
+            <a class="nav-link active" href="/WebTest/produk-hukum/perdes.html"
+              >Produk Hukum</a
+            >
+
+            <a
+              class="nav-link"
+              href="/WebTest/desa-anti-korupsi/indikator1.html"
+              >Desa Anti korupsi</a
+            >
+
+            <form class="d-flex">
+              <input
+                class="form-control me-2 ms-1"
+                type="search"
+                placeholder="Masukkan NIK/KK"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div
+        class="header d-flex justify-content-center flex-column mt-1 ms-lg-5 me-lg-5"
+      >
+        <h1 class="produk" data-aos="fade-down" data-aos-duration="1500">
+          Produk Hukum
+        </h1>
+        <img
+          src="/WebTest/img/hero.png"
+          class="mb-3 mt-2"
+          data-aos="fade-down"
+          data-aos-duration="1400"
+          alt="image"
+        />
+        <p class="deks-produk" data-aos="zoom-in-up" data-aos-duration="1500">
+          Produk hukum desa adalah seperangkat peraturan atau kebijakan yang
+          diterbitkan oleh pemerintah desa untuk mengatur tata kelola,
+          ketertiban, dan perkembangan desa secara hukum. Produk hukum desa
+          memiliki peran penting dalam menjaga kesejahteraan dan keberlanjutan
+          desa, serta memastikan bahwa aktivitas di tingkat desa berjalan sesuai
+          dengan hukum dan peraturan yang berlaku.
+        </p>
+      </div>
+      <div class="main mt-5 ms-lg-5 me-lg-5">
+        <div class="row" data-aos="fade-right" data-aos-duration="1500">
+          <a
+            href="perdes.html"
+            class="button col-1"
+            style="
+              color: black;
+
+              text-align: center;
+
+              text-decoration: none;
+              padding: 5px;
+              font-family: Calistoga;
+              font-size: 22px;
+            "
+          >
+            Perdes
+          </a>
+          <a
+            href="perkedes.html"
+            class="button col-1"
+            style="
+              color: rgb(0, 0, 0);
+
+              text-align: center;
+              font-family: Calistoga;
+              padding: 5px;
+              text-decoration: none;
+              font-size: 22px;
+            "
+          >
+            Perkedes
+          </a>
+          <a
+            href="sk-kades.html"
+            class="button col-1"
+            style="
+              background-color: black;
+              color: rgb(255, 255, 255);
+              border-radius: 10px;
+              text-align: center;
+              text-decoration: none;
+              padding: 5px;
+              font-family: Calistoga;
+              font-size: 22px;
+            "
+          >
+            SK Kades
+          </a>
+        </div>
+        <div
+          class="perdes mt-3 mb-5"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="1000"
+        >
+          Perdes (peraturan desa)adalah peraturan perundang-undangan yang
+          ditetapkan oleh Kepala Desa setelah dibahas dan disepakati bersama
+          Badan Permusyawaratan Desa (BPD).
+          <table class="table table-bordered mt-2">
+            <thead>
+              <tr>
+                <th scope="col" class="tbl-tengah">No</th>
+                <th scope="col" class="tbl-tengah">Tanggal</th>
+                <th scope="col" class="tbl-tengah">Tentang</th>
+                <th scope="col" class="tbl-tengah">Lihat File</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="tbl-tengah">1</th>
+                <td class="tbl-tengah">7 Tahun 2016</td>
+                <td>Struktur Organisasi dan Tata Kerja Pemerintah Desa</td>
+                <td class="tbl-tengah">Download</td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">2</th>
+                <td class="tbl-tengah">1 Tahun 2017</td>
+                <td>
+                  Perubahan atas Perdes No 5 Tahun 2008 tentang
+                  Pungutan-Pungutan Sumber Dana Desa
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">3</th>
+                <td class="tbl-tengah">6 Tahun 2018</td>
+                <td>Rencana Kerja Pemerintah Desa Tahun 2019</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">4</th>
+                <td class="tbl-tengah">7 Tahun 2018</td>
+                <td>Anggaran Pendapatan dan Belanja Desa Tahun 2019</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">5</th>
+                <td class="tbl-tengah">6 Tahun 2019</td>
+                <td>
+                  Rencana Pembangunan Jangka Menengah Desa Tahun 2020-2025
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">6</th>
+                <td class="tbl-tengah">7 Tahun 2019</td>
+                <td>Rencana Kerja Pemerintah Desa Tahun 2020</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">7</th>
+                <td class="tbl-tengah">14 Tahun 2019</td>
+                <td>Anggaran Pendapatan dan Belanja Desa Tahun 2020</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">8</th>
+                <td class="tbl-tengah">1 Tahun 2020</td>
+                <td>Laporan Pertanggungjawaban Realisasi APBDes Tahun 2019</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">9</th>
+                <td class="tbl-tengah">9 Tahun 2020</td>
+                <td>Rencana Kerja Pemerintah Desa Tahun 2021</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">10</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Anggaran Pendapatan dan Belanja Desa Tahun 2021</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">11</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Laporan Pertanggungjawaban Realisasi APBDes Tahun 2020</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">12</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Rencana Kerja Pemerintah Desa Tahun 2022</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">13</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Anggaran Pendapatan dan Belanja Desa Tahun 2022</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">14</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Laporan Pertanggungjawaban Realisasi APBDes Tahun 2021</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">15</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Pelayanan Informasi Publik</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">16</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Anggaran Pendapatan dan Belanja Desa Tahun 2023</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">17</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Laporan Pertanggungjawaban Realisasi APBDes Tahun 2022</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">18</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Pencegahan Perkawinan Anak</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row" class="tbl-tengah">19</th>
+                <td class="tbl-tengah">14 Tahun 2020</td>
+                <td>Pendirian BumDes</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div
+        class="container mt-150"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        data-aos-duration="900"
+      >
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input
+              type="nama"
+              class="form-control"
+              id="floatingNama"
+              placeholder="Nama"
+            />
+            <label for="floatingInput" class="komentar">Komentar</label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        data-aos-duration="900"
+      >
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input
+              type="nama"
+              class="form-control"
+              id="floatingNama"
+              placeholder="Nama"
+            />
+            <label for="floatingInput" class="komentar"
+              >Silakan tulis komentar dalam formulir berikut ini (Gunakan bahasa
+              yang santun). Komentar akan ditampilkan setelah disetujui oleh
+              Admin</label
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="ms-5 me-5"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        data-aos-duration="1200"
+      >
+        <div class="row g-2">
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="nama"
+                class="form-control"
+                id="floatingNama"
+                placeholder="Nama"
+              />
+              <label for="floatingInput">Nama Lengkap</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingNomor"
+                placeholder="Nomor"
+              />
+              <label for="floatingPassword">Nomor Handphone</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextareaKomentar"
+            style="height: 100px;"
+          ></textarea>
+          <label for="floatingTextarea2">Komentar</label>
+        </div>
+        <button type="submit" class="btn btn-dark mb-3">Submit</button>
+      </div>
+    </div>
+    <div class="background-footer">
+      <div class="container-fluid">
+        <div class="footer">
+          <div class="tambaksari">
+            <h2 style="font-size: 18px;">TAMBAKSARI KIDUL</h2>
+            <p>
+              Tambaksari Kidul merupakan sebuah desa di kecamatan Kembaran,
+              Banyumas, Jawa Tengah, Indonesia. Desa ini memiliki luas 149km2
+              dan memiliki kepadatan sebesar 37 jiwa/km2. Dengan masyarakatnya
+              yang sebagian besar sebagai petani dan pedagang.
+            </p>
+          </div>
+          <div class="tengah">
+            <div class="alamat">
+              <h2 style="font-size: 18px;">Alamat</h2>
+              <p>
+                Dusun I Jalan Sunan Bonang No.36, RT.05/RW.03, Dusun I,
+                Tambaksari Kidul, Kec. Kembaran, Kabupaten Banyumas, Jawa Tengah
+                53146
+              </p>
+            </div>
+            <div class="profil-desa">
+              <h2 style="font-size: 18px;">Profil Desa</h2>
+              <a href="#">Visi Misi</a>
+              <a href="#">Wilayah</a>
+              <a href="#">Demografi</a>
+              <a href="#">Tugas dan Fungsi</a>
+              <a href="#">Struktur Organisasi</a>
+            </div>
+          </div>
+          <div class="side">
+            <div class="email">
+              <h2 style="font-size: 18px;">Email</h2>
+              <p>tambaksarikidul@gmail.com</p>
+            </div>
+            <div class="social-media">
+              <h2 style="font-size: 18px;">Social Media</h2>
+              <img src="/WebTest/img/fb.png" alt="image" />
+              <img src="/WebTest/img/xtwiter 5.png" alt="image" />
+              <img src="/WebTest/img/ig.png" alt="image" />
+              <img src="/WebTest/img/yt.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>© 2023 Hak Cipta Dilindungi. Develop oleh STMIK Team</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

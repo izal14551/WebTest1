@@ -1,0 +1,45 @@
+img {
+  border-radius: 20px;
+}
+.background-footer {
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+}
+.footer {
+  margin: 1rem;
+  display: flex;
+  color: white;
+}
+.tambaksari {
+  width: 600px;
+  font-size: 12px;
+  margin-right: 2rem;
+}
+.alamat {
+  font-size: 12px;
+}
+.profil-desa a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-size: 12px;
+}
+.email {
+  font-size: 12px;
+  margin-left: 8px;
+}
+.social-media {
+  margin-left: 8px;
+}
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+footer {
+  font-size: 13px;
+  text-align: center;
+  background-color: #525252;
+  color: white;
+  padding: 1rem;
+}

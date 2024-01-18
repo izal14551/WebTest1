@@ -1,0 +1,102 @@
+.navbar-brand {
+  color: #030303;
+  font-family: Calistoga;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header {
+  max-height: 100vh;
+}
+.header img {
+  height: 62vh;
+  width: auto;
+  border-radius: 20px;
+}
+.header p {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: Calistoga;
+}
+.main button {
+  transition-duration: 0.4s;
+}
+.main button:hover {
+  background-color: black;
+  color: white;
+}
+.main button::after {
+  background-color: black;
+  color: white;
+}
+.background-footer {
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+}
+.footer {
+  margin: 1rem;
+  display: flex;
+  color: white;
+}
+.tambaksari {
+  width: 600px;
+  font-size: 12px;
+  margin-right: 2rem;
+  font-family: Calistoga;
+}
+.alamat {
+  font-size: 12px;
+}
+.profil-desa a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-size: 12px;
+}
+.email {
+  font-size: 12px;
+  margin-left: 8px;
+}
+.social-media {
+  margin-left: 8px;
+}
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+footer {
+  font-size: 13px;
+  text-align: center;
+  background-color: #525252;
+  color: white;
+  padding: 1rem;
+}
+.produk {
+  color: #000;
+
+  font-family: Calistoga;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 110px;
+}
+.deks-produk {
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tbl-tengah {
+  text-align: center;
+}
+.mt-150 {
+  margin-top: 150px;
+}
+.komentar {
+  text-align: center;
+}

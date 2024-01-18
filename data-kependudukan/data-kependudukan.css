@@ -1,0 +1,238 @@
+.mt-150 {
+  margin-top: 150px;
+}
+.body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -50px;
+}
+.visi {
+  color: rgb(0, 0, 0);
+}
+.visi-desa {
+  display: flexbox;
+}
+.margin {
+  margin-left: 15px;
+}
+.nav-tbs {
+  color: #030303;
+  font-family: Calistoga;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bg {
+  width: 1150px;
+  height: 580px;
+  flex-shrink: 0;
+}
+.navbar-brand {
+  color: #030303;
+  font-family: Calistoga;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.profil {
+  color: #00395e;
+  text-align: center;
+  font-family: Calistoga;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+.bawah-bg {
+  color: #020202;
+  font-family: Philosopher;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 1210px;
+}
+.visi {
+  color: #fff;
+  font-family: Calistoga;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 400px;
+  height: 59px;
+  flex-shrink: 0;
+  background: #000;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.flex {
+  display: flex;
+}
+.wilayah {
+  color: #000;
+  font-family: Calistoga;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 2px;
+  padding-top: 10px;
+}
+.garis {
+  background: rgba(0, 0, 0, 0.5);
+  width: 580px;
+  height: 1px;
+}
+.visi-bawah {
+  color: #0b0a0a;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.desk-visi {
+  color: #0b0a0a;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bg-item {
+  background-color: black;
+  width: 1450px;
+  height: 372px;
+  flex-shrink: 0;
+  display: flex;
+}
+.tbs {
+  color: #fff;
+  font-family: Philosopher;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 174px;
+}
+.tbs-deks {
+  width: 446px;
+  height: 113px;
+  flex-shrink: 0;
+  color: #fffafa;
+  font-family: Philosopher;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pemerintah {
+  color: #000;
+  font-family: Philosopher;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.ahmad {
+  width: 100%;
+  height: 230px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.nama {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.grafik {
+  height: 283px;
+}
+.deks-grafik {
+  color: #00395e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: right;
+}
+.container-mt-5 {
+  display: flex;
+}
+.tanggal {
+  color: #00395e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-top: 4px;
+  padding-left: 7%;
+}
+.detail {
+  color: #1b76b3;
+  font-family: Inter;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 173px;
+  height: 22px;
+  padding-left: 7%;
+}
+.grafik-2 {
+  width: 448px;
+  height: 272px;
+}
+.background-footer {
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+}
+.footer {
+  margin: 1rem;
+  display: flex;
+  color: white;
+}
+.tambaksari {
+  width: 600px;
+  font-size: 12px;
+  margin-right: 2rem;
+}
+.alamat {
+  font-size: 12px;
+}
+.profil-desa a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-size: 12px;
+}
+.email {
+  font-size: 12px;
+  margin-left: 8px;
+}
+.social-media {
+  margin-left: 8px;
+}
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+footer {
+  font-size: 13px;
+  text-align: center;
+  background-color: #525252;
+  color: white;
+  padding: 1rem;
+}
