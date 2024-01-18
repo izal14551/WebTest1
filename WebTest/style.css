@@ -1,0 +1,174 @@
+/* Reset beberapa gaya bawaan */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(233, 233, 233, 0.753);
+}
+
+/* Gaya jumbotron */
+.jumbotron {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      72.74deg,
+      rgba(0, 52, 35, 0.55) 56.19%,
+      rgba(0, 0, 0, 0) 94.42%
+    ),
+    url(img/jumbotron.jpg);
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  margin-top: -72px;
+  text-align: start;
+}
+.jumbotron h1 {
+  font-size: 3.5rem;
+}
+
+.jumbotron p {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+.col1 {
+  font-size: 50px;
+}
+.search-box {
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  padding-bottom: 30px;
+  position: absolute;
+}
+
+.search-btn {
+  color: #ffffff;
+  float: right;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #01614c;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.search-input {
+  border-radius: 50px;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+  width: 0px;
+  line-height: 40px;
+  transition: 0.5s;
+}
+
+.search-box:hover > .search-input {
+  width: 240px;
+  padding: 0 10px;
+  margin-right: 5px !important;
+  background: white;
+  border-radius: 50px;
+  color: black;
+}
+
+.search-box:hover > .search-btn {
+  background: #e9dac4;
+  color: #189ab4;
+}
+
+/* Gaya navbar */
+.navbar {
+  margin-top: 1rem;
+}
+
+/* Gaya menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Menghilangkan margin default yang ada */
+  display: inline; /* Mengatur tata letak menjadi inline */
+}
+
+.menu li {
+  margin-right: 20px;
+  display: inline; /* Mengatur tata letak menjadi inline */
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; /* Ukuran teks */
+  transition: color 0.3s; /* Efek transisi warna saat hover */
+}
+
+.menu a:hover {
+  color: #007bff; /* Warna teks saat dihover */
+}
+.logo {
+  color: white;
+  text-decoration: none;
+}
+
+.pengumuman {
+  background-color: rgb(83, 83, 83);
+  margin-bottom: 2rem;
+}
+/* Gaya card container */
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.card {
+  width: 300px; /* Atur lebar card sesuai kebutuhan Anda */
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+/* Gaya gambar di dalam card */
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.judul {
+  font-size: 15px;
+  font-weight: bold;
+  color: #f9ad3d;
+  text-transform: uppercase;
+}
+.sosial {
+  display: grid;
+  grid-template-areas: "main aside";
+  grid-template-columns: 2fr 1fr;
+}
+main {
+  grid-area: main;
+  margin-right: 20px;
+}
+aside {
+  grid-area: aside;
+  margin-left: 20px;
+}
+/* Gaya kotak */
+.box {
+  padding: 1.5rem;
+  background-color: #fff; /* Warna putih */
+  border-radius: 8px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.4); /* Efek bayangan */
+  margin: 50px auto; /* Atur jarak dari atas dan bawah, serta center secara horizontal */
+}
